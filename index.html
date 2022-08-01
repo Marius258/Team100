@@ -44,93 +44,104 @@
                     </nav>
                </header>
 
-               <div class="progress-bar">
-                    <div class="progressbar">
-                         <div class="progress1">
-                              <div class="progressbox">1</div>
-                              <div class="progresstext">ACCOUNT SETUP</div>
-                         </div>
-                         <div class="progressline"></div>
-                         <div class="progress2">
-                              <div class="progressbox">2</div>
-                              <div class="progresstext">SOCIAL PROFILES</div>
-                         </div>
-                         <div class="progressline"></div>
-                         <div class="progress3">
-                              <div class="progressbox">3</div>
-                              <div class="progresstext">PERSONAL DETAILS</div>
+               <main class="main-container">
+                    <div class="progress-bar">
+                         <div class="progressbar">
+                              <div class="progress1">
+                                   <div class="progressbox">1</div>
+                                   <div class="progresstext">ACCOUNT SETUP</div>
+                              </div>
+                              <div class="progressline"></div>
+                              <div class="progress2">
+                                   <div class="progressbox">2</div>
+                                   <div class="progresstext">
+                                        SOCIAL PROFILES
+                                   </div>
+                              </div>
+                              <div class="progressline"></div>
+                              <div class="progress3">
+                                   <div class="progressbox">3</div>
+                                   <div class="progresstext">
+                                        PERSONAL DETAILS
+                                   </div>
+                              </div>
                          </div>
                     </div>
-               </div>
 
-               <div class="form-container">
-                    <form action="#">
-                         <h3>Step 1: Your details</h3>
-                         <div class="form-item-container">
-                              <div class="form-item">
-                                   <label for="name">Name</label>
-                                   <input type="text" id="name" />
+                    <div class="form-container">
+                         <form action="#">
+                              <h3>Step 1: Your details</h3>
+                              <div class="form-item-container">
+                                   <div class="form-item">
+                                        <label for="name">Name</label>
+                                        <input type="text" id="name" />
+                                   </div>
+                                   <div class="form-item">
+                                        <label for="email">Email</label>
+                                        <input
+                                             type="email"
+                                             id="email"
+                                             placeholder="example@domain.com"
+                                        />
+                                   </div>
+                                   <div class="form-item">
+                                        <label for="phone">Number</label>
+                                        <input type="number" id="phone" />
+                                   </div>
                               </div>
-                              <div class="form-item">
-                                   <label for="email">Email</label>
-                                   <input
-                                        type="email"
-                                        id="email"
-                                        placeholder="example@domain.com"
-                                   />
+                              <!--  -->
+                              <h3>Step 2: Delivery address</h3>
+                              <div class="form-item-container">
+                                   <div class="form-item">
+                                        <label for="address">Address</label>
+                                        <textarea
+                                             name="address"
+                                             id="address"
+                                             cols="30"
+                                             rows="5"
+                                        ></textarea>
+                                   </div>
+                                   <div class="form-item">
+                                        <label for="postcode">Post code</label>
+                                        <input type="number" id="postcode" />
+                                   </div>
+                                   <div class="form-item">
+                                        <label for="country">Country</label>
+                                        <input type="text" id="country" />
+                                   </div>
                               </div>
-                              <div class="form-item">
-                                   <label for="phone">Number</label>
-                                   <input type="number" id="phone" />
+                              <h3>Step 3: Card details</h3>
+                              <div class="form-item-container">
+                                   <div class="form-item">
+                                        <label for="cardType">Address</label>
+                                        <select name="cardType" id="cardType">
+                                             <option value="visa">VISA</option>
+                                             <option value="amex">AmEx</option>
+                                             <option value="mastercard">
+                                                  mastercard
+                                             </option>
+                                        </select>
+                                   </div>
+                                   <div class="form-item">
+                                        <label for="securityCode"
+                                             >Security code</label
+                                        >
+                                        <input
+                                             type="number"
+                                             id="securityCode"
+                                        />
+                                   </div>
+                                   <div class="form-item">
+                                        <label for="nameOnCard"
+                                             >Name on card</label
+                                        >
+                                        <input type="text" id="nameOnCard" />
+                                   </div>
                               </div>
-                         </div>
-                         <!--  -->
-                         <h3>Step 2: Delivery address</h3>
-                         <div class="form-item-container">
-                              <div class="form-item">
-                                   <label for="address">Address</label>
-                                   <textarea
-                                        name="address"
-                                        id="address"
-                                        cols="30"
-                                        rows="5"
-                                   ></textarea>
-                              </div>
-                              <div class="form-item">
-                                   <label for="postcode">Post code</label>
-                                   <input type="number" id="postcode" />
-                              </div>
-                              <div class="form-item">
-                                   <label for="country">Country</label>
-                                   <input type="text" id="country" />
-                              </div>
-                         </div>
-                         <h3>Step 3: Card details</h3>
-                         <div class="form-item-container">
-                              <div class="form-item">
-                                   <label for="cardType">Address</label>
-                                   <select name="cardType" id="cardType">
-                                        <option value="visa">VISA</option>
-                                        <option value="amex">AmEx</option>
-                                        <option value="mastercard">
-                                             mastercard
-                                        </option>
-                                   </select>
-                              </div>
-                              <div class="form-item">
-                                   <label for="securityCode"
-                                        >Security code</label
-                                   >
-                                   <input type="number" id="securityCode" />
-                              </div>
-                              <div class="form-item">
-                                   <label for="nameOnCard">Name on card</label>
-                                   <input type="text" id="nameOnCard" />
-                              </div>
-                         </div>
-                         <button type="submit">Buy it!</button>
-                    </form>
-               </div>
+                              <button type="submit">Buy it!</button>
+                         </form>
+                    </div>
+               </main>
           </div>
      </body>
 </html>

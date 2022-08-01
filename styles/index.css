@@ -1,3 +1,18 @@
 @import './header.css';
 @import './progress-bar.css';
 @import './form.css';
+
+* {
+     box-sizing: border-box;
+}
+
+.main-container {
+     margin: 0 auto;
+     width: 40rem;
+}
+
+@media only screen and (max-width: 700px) {
+     .main-container {
+          width: 100vw;
+     }
+}
