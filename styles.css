@@ -1,5 +1,9 @@
+/* HEADER STYLES */
+
 header {
      font-size: clamp(1rem, 2vw, 1.5rem);
+     position: sticky;
+     top: 0;
 }
 
 .navbar {
@@ -45,7 +49,11 @@ header {
      align-self: center;
 }
 
+/* // HEADER STYLES */
+
 @media only screen and (max-width: 700px) {
+     /* HEADER STYLES */
+
      .navbar ul {
           display: none;
      }
@@ -53,4 +61,5 @@ header {
      .mobile-menu {
           display: block;
      }
+     /* // HEADER STYLES */
 }
