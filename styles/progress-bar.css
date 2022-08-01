@@ -1,0 +1,36 @@
+.progress-bar {
+     display: flex;
+     justify-content: center;
+}
+.progressbar {
+     margin-top: 1rem;
+     display: flex;
+     background: orange;
+     width: 80vh;
+     padding: 1rem;
+     text-align: center;
+     justify-items: center;
+     cursor: default;
+}
+.progresstext {
+     color: #eee;
+}
+.progressbox {
+     display: flex;
+     background-color: #eee;
+     width: 2.5rem;
+     height: 2.5rem;
+     border-radius: 0.5rem;
+     justify-content: center;
+     align-items: center;
+     margin: 0 auto;
+     margin-bottom: 0.5rem;
+}
+.progressline {
+     background: #eee;
+     height: 5px;
+     width: 20rem;
+     margin-top: 1rem;
+     margin-right: -2rem;
+     margin-left: -2rem;
+}
