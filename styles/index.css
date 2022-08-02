@@ -41,4 +41,13 @@
      .form-item-container:first-child {
           padding-right: 1.5rem;
      }
+     .progressbar {
+          justify-content: center;
+         
+          width: 100%;
+     }
+     .progressline {
+          margin-right: -5%;
+          margin-left: -5%;
+     }
 }
