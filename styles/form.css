@@ -3,28 +3,67 @@
      padding: 3rem;
      width: 100%;
      margin-top: 1rem;
+     border-radius: 10px;
 }
 
 form {
-     display: flex;
-     flex-direction: column;
+     /* display: flex;
+     flex-direction: column; */
+     display: grid;
+     /* grid-template-rows: 1fr 1fr 1fr; */
 }
+
 .form-item {
-     display: flex;
-     justify-content: space-between;
+     /* display: flex;
+     justify-content: space-between; */
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     /* align-items: center; */
      background-color: #0ea5e9;
      border: 2px solid #0c4a6e;
      border-radius: 5px;
      padding-right: 4rem;
      padding-block: 0.725rem;
-}
-
-.form-item {
      margin-bottom: 1rem;
 }
 
-.form-item input,
+.form-item input:not([type='radio']),
 .form-item textarea {
+     height: 1.725rem;
      border-radius: 5px;
      border: none;
+     width: 10rem;
 }
+
+.form-item textarea {
+     height: 5rem;
+}
+
+.form-item label {
+     padding-left: 1rem;
+     padding-right: 1rem;
+}
+
+.cardtype-container {
+     grid-template-columns: 1fr;
+}
+
+.cardtypes {
+     padding-top: 1rem;
+     display: flex;
+     align-items: center;
+}
+
+form button {
+     margin-top: 2rem;
+     width: 30%;
+     /* align-self: center; */
+     margin: 0 auto;
+}
+
+/* @media only screen and (min-width: 1400px) {
+     form {
+          flex-direction: row;
+    
+     }
+} */

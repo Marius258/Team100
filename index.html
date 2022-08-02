@@ -70,8 +70,8 @@
 
                     <div class="form-container">
                          <form action="#">
-                              <h3>Step 1: Your details</h3>
                               <div class="form-item-container">
+                                   <h3>Step 1: Your details</h3>
                                    <div class="form-item">
                                         <label for="name">Name</label>
                                         <input type="text" id="name" />
@@ -90,8 +90,9 @@
                                    </div>
                               </div>
                               <!--  -->
-                              <h3>Step 2: Delivery address</h3>
+
                               <div class="form-item-container">
+                                   <h3>Step 2: Delivery address</h3>
                                    <div class="form-item">
                                         <label for="address">Address</label>
                                         <textarea
@@ -110,17 +111,30 @@
                                         <input type="text" id="country" />
                                    </div>
                               </div>
-                              <h3>Step 3: Card details</h3>
+
                               <div class="form-item-container">
-                                   <div class="form-item">
-                                        <label for="cardType">Address</label>
-                                        <select name="cardType" id="cardType">
-                                             <option value="visa">VISA</option>
-                                             <option value="amex">AmEx</option>
-                                             <option value="mastercard">
-                                                  mastercard
-                                             </option>
-                                        </select>
+                                   <h3>Step 3: Card details</h3>
+                                   <div class="form-item cardtype-container">
+                                        <label for="">Card type</label>
+                                        <div class="cardtypes">
+                                             <label for="cardtype"
+                                                  >MasterCard</label
+                                             >
+                                             <input
+                                                  type="radio"
+                                                  name="cardtype"
+                                             />
+                                             <label for="cardtype">AmEx</label>
+                                             <input
+                                                  type="radio"
+                                                  name="cardtype"
+                                             />
+                                             <label for="cardtype">VISA</label>
+                                             <input
+                                                  type="radio"
+                                                  name="cardtype"
+                                             />
+                                        </div>
                                    </div>
                                    <div class="form-item">
                                         <label for="securityCode"
