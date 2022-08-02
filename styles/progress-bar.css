@@ -18,6 +18,7 @@
 .progressbox {
      display: flex;
      background-color: #eee;
+     color: black;
      width: 2.5rem;
      height: 2.5rem;
      border-radius: 0.5rem;
@@ -25,6 +26,8 @@
      align-items: center;
      margin: 0 auto;
      margin-bottom: 0.5rem;
+     z-index: 2;
+     position: relative;
 }
 .progressline {
      background: #eee;
@@ -33,4 +36,10 @@
      margin-top: 1rem;
      margin-right: -2rem;
      margin-left: -2rem;
+     z-index: 1;
+     position: relative;
+}
+.active {
+     background: green;
+     color: #eee; 
 }
