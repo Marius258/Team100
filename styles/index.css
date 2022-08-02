@@ -15,4 +15,30 @@
      .main-container {
           width: 100vw;
      }
+
+     .form-container {
+          border-radius: 0;
+     }
+}
+
+@media only screen and (min-width: 1400px) {
+     .main-container {
+          width: min-content;
+     }
+     form {
+          grid-template-columns: 1fr 1fr 1fr;
+     }
+
+     form button {
+          grid-column: 2 / 3;
+          margin-top: 3rem;
+     }
+
+     .form-item-container:not(:first-child) {
+          padding-inline: 1.5rem;
+     }
+
+     .form-item-container:first-child {
+          padding-right: 1.5rem;
+     }
 }
