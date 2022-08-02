@@ -32,10 +32,10 @@
 .progressline {
      background: #eee;
      height: 5px;
-     width: 20.5rem;
+     width: 20rem;
      margin-top: 1rem;
      margin-right: -2rem;
-     margin-left: -1.6rem;
+     margin-left: -2rem;
      z-index: 1;
      position: relative;
 }
