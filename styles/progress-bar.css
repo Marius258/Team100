@@ -1,42 +1,70 @@
 .progress-bar {
-     display: flex;
-     justify-content: center;
-}
-.progressbar {
-     margin-top: 1rem;
-     display: flex;
-     background: orange;
      width: 100%;
-     padding: 1rem;
-     text-align: center;
-     justify-content: space-between;
-     cursor: default;
+     background-color: #0284c7;
+     height: 5rem;
+     /* border-radius: 10px; */
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+     margin-top: 4rem;
+     padding-top: 1rem;
 }
-.progresstext {
-     color: #eee;
-}
-.progressbox {
-     display: flex;
-     background-color: #eee;
-     color: black;
-     width: 2.5rem;
-     height: 2.5rem;
-     border-radius: 0.5rem;
-     justify-content: center;
+
+.progress-list {
+     display: grid;
+     height: 100%;
+     grid-template-columns: repeat(3, 1fr);
+     justify-items: center;
      align-items: center;
-     margin: 0 auto;
-     margin-bottom: 0.5rem;
+     list-style: none;
+}
+
+.progress-list li {
      position: relative;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+     gap: 0.5rem;
 }
-.progressline {
-     background: #eee;
-     height: 5px;
-     width: 20rem;
-     margin-top: 1rem;
-     margin-right: -10%;
-     margin-left: -5%;
+
+.progress-list li::before {
+     content: attr(data-value);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+     width: 2rem;
+     height: 2rem;
+     border-radius: 50%;
+     background-color: #fff;
+
+     top: 0;
+     right: 0;
+     position: relative;
+     z-index: 2;
 }
-.active {
-     background: green;
-     color: #eee; 
+
+.progress-list li::after {
+     content: '';
+     width: 100%;
+     position: absolute;
+
+     background-color: #fff;
+     height: 0.3rem;
+     transform: translate(50%);
+     top: 12px; /* needs a fix */
+     right: 100%;
 }
+
+.progress-list li:first-child::after {
+     content: none;
+}
+
+.progress-list li.active:before,
+.progress-list li.active::after {
+     background-color: rgb(48, 113, 48);
+     color: #fff;
+}
+/* .progress-list li.active + li::after {
+     background-color: green;
+} */

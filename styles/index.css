@@ -1,9 +1,14 @@
 @import './header.css';
 @import './progress-bar.css';
 @import './form.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
      box-sizing: border-box;
+}
+
+body {
+     font-family: 'Roboto', sans-serif;
 }
 
 .main-container {
@@ -17,6 +22,10 @@
      }
 
      .form-container {
+          border-radius: 0;
+     }
+
+     .progress-bar {
           border-radius: 0;
      }
 }
@@ -43,7 +52,7 @@
      }
      .progressbar {
           justify-content: center;
-         
+
           width: 100%;
      }
      .progressline {
